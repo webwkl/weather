@@ -1,0 +1,30 @@
+<view class="content">
+    <image class="main-bg" src="../assets/img/bg1.jpg"></image>
+    <view class="today">
+        <view class="info">
+            <view class="city">{{city}}</view>
+            <view class="temp">{{temp}}</view>
+            <view class="weather-img">
+                <text>白</text>
+                <image src="{{todayDayImg}}" class="today-img"></image>
+                <text>夜</text>
+                <image src="{{todayNightImg}}" class="today-img"></image>
+            </view>
+            <view class="weather">{{weather}}</view>      
+        </view>
+        <view class='time'>
+            <view class="today-time">{{todayTime}}</view>
+            <view class="today-date">{{todayDate}}</view>
+        </view>
+    </view>
+    <!--搜索-->
+  <view>
+    <view class="search-area"> 
+      <input bindinput="inputing" placeholder="请输入城市名称" 
+          value="{{inputCity}}"  />
+      <button type="primary" size="mini" bindtap="bindSearch">查询</button>
+    </view>
+    <view>{{result}}</view>
+  </view>
+  
+</view>
