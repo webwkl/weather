@@ -1,0 +1,103 @@
+page{
+  height: 100%;
+}
+.swipers{
+   height: 100%;
+ }
+ image{
+   background: #ccc;
+ }
+ /*其实，正常情况下，没必要加.wrap,多余，但由于.dot要绝对定位到swiper上，而swiper中不能包裹其他的元素
+（除了swiper-item)，所以只好加个.wrap用来约束.dot  */
+.wrap{
+  height: 100%;
+  position: relative;  
+}
+.tit{
+  font-size: 20rpx;
+  color: #000;
+  position: absolute;
+  right:60rpx;
+  top: 40rpx;
+  display: none;
+}
+.shows{
+  display: block;
+}
+swipers{  
+  height: 350rpx; 
+}  
+.dots_box{
+  width: 300rpx;
+  height: 156rpx;
+  position: absolute;
+  right: 0;
+  top: 50rpx;
+}
+/*用来包裹所有的小圆点  */
+ 
+image{
+  width: 100%;
+  height: 100%;
+}
+.line{
+  width: 1rpx;
+  height: 199rpx;
+  position: absolute;
+  left: 285rpx;
+  top: 0;
+  z-index: 10;
+}
+/*未选中时的小圆点样式 */
+.dots{  
+  width: 30rpx;
+  height: 156rpx; 
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  /* align-items:flex-end; */
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 11;
+} 
+.dot{  
+  width: 10rpx;  
+  height: 10rpx;
+  border-radius: 50%;
+  margin-top: 26rpx;
+  
+  background-color: white;
+  border:1px solid transparent;
+  position: relative;
+}  
+.dotOn{
+  width: 30rpx;   
+  height: 30rpx;
+  border:1px solid #000;
+  border-radius: 100%;
+  background: none;
+  display: none;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  
+}
+.dot.active .dotOn{
+  display: block;
+}
+/*选中以后的小圆点样式 
+/* .dot.active{  
+  width: 30rpx;   
+  height: 30rpx;
+  border:1px solid #000;
+  border-radius: 100%;
+  /* padding:0rpx; 
+}   */
+.top_go{
+  width: 10rpx;
+  height: 10rpx;
+}
+/* url('https://api.benz.wx.fractalist.com.cn/Images/Mall/active.png') no-repeat; */

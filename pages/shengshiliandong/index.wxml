@@ -1,0 +1,10 @@
+<view class="section">
+<view class="section__title">所在省份</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      请选择：{{multiArray[0][multiIndex[0]]}}，
+    </view>
+    <view>{{multiArray[1][multiIndex[1]]}}</view>
+  </picker>
+</view>
+

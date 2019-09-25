@@ -1,0 +1,19 @@
+page{
+  background: blue;
+}
+text{
+  font-size:40rpx;
+  color: #fff;
+}
+.multi-img{
+  width: 60rpx;
+  height: 60rpx;
+}
+.a{
+  width: 200rpx;
+  height: 200rpx;
+  background: #000;
+}
+.b{
+  background: #fff;
+}

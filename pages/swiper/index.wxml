@@ -1,0 +1,28 @@
+<view class="wrap">
+    <image class='top_go' style='top:{{top}}rpx' src=''></image>
+    <swiper class="swipers" bindchange="bindPickerChange" autoplay="{{autoplay}}" current="{{currentSwiper}}" bindchange="swiperChange">  
+        <block wx:for="{{imgs}}" wx:key="index">  
+            <swiper-item>  
+                 <image src="{{item.url}}"></image>  
+            </swiper-item>  
+        </block>  
+    </swiper>  
+   <!--重置小圆点的样式  -->
+   <view class='dots_box'>
+      <image class='line' src='../assets/img/line.png'></image>
+      <block wx:for="{{arr}}" wx:key="index">
+        <view class="tit {{index == currentSwiper ? ' shows' : ''}}" style='top:{{top}}rpx'>{{item.tit}}</view>
+      </block>
+
+      <view class="dots">  
+
+          <block wx:for="{{imgs}}" wx:key="index">  
+              <view class="dot{{index == currentSwiper ? ' active' : ''}}">
+                  <view class="dotOn"></view>
+              </view>  
+          </block>  
+      </view>  
+   </view>
+   
+</view>
+

@@ -1,0 +1,13 @@
+.parameter-wrap{
+
+}
+.parameter-info{
+  display: block;
+  padding-left: 40rpx; 
+  background: url('http://api.benz.wx.fractalist.com.cn/Images/Mall/choose_n.png') center left no-repeat;
+  background-size: 32rpx 32rpx;  
+}
+.checked_parameter{
+  background: url('http://api.benz.wx.fractalist.com.cn/Images/Mall/choose_y.png') center left no-repeat;
+  background-size: 32rpx 32rpx;  
+}

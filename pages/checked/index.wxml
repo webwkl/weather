@@ -1,0 +1,11 @@
+<view class="sel-box">
+    <view wx:for="{{repContent}}" class="multi-selection">
+    
+    <view bindtap="selectRep" class="{{selectIndex[index].sureid?'a':'b'}}" data-selectIndex="{{index}}">
+      <image src="{{selectIndex[index].sureid? hasSelect : noSelect}}" class="multi-img"  />
+      <text>{{item.message}}</text>
+    </view>
+      
+       
+    </view>
+  </view>
